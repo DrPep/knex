@@ -61,7 +61,7 @@ async function initKnex(env, opts) {
 function invoke(env) {
   env.modulePath = env.modulePath || env.knexpath || process.env.KNEX_PATH;
 
-  const filetypes = ['js', 'coffee', 'ts', 'eg', 'ls'];
+  const filetypes = ['cjs', 'js', 'coffee', 'ts', 'eg', 'ls'];
 
   const cliVersion = [
     color.blue('Knex CLI version:'),
